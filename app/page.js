@@ -1,5 +1,5 @@
 import CustomDatePicker from "./components/CustomDatePicker/CustomDatePicker";
-import AICustomDatePicker from "./components/TwoCustomDatePicker/AICustomDatePicker";
+import TwoCustomDatePicker from "./components/TwoCustomDatePicker/TwoCustomDatePicker";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <CustomDatePicker /> 
       </section>
       <section className="mb-8">
-        <AICustomDatePicker/>
+        <TwoCustomDatePicker/>
       </section>
     </main>
   );

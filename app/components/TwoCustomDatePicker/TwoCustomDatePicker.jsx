@@ -2,11 +2,12 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './AICustomDatePicker.css'; 
+import './TwoCustomDatePicker.css'; 
 
 export default function AICustomDatePicker() {
+  const today = new Date(); // Get today's date
   const [formData, setFormData] = useState({
-    date: null,
+    date: today,
     hoursWorked: '',
     hourlyRate: '',
   });
@@ -29,7 +30,7 @@ export default function AICustomDatePicker() {
       hourlyRate,
     };
     console.log(submittedData);
-    // Here, you can perform any additional actions with the submitted data
+    // Send to db or something
   };
 
   return (
@@ -41,7 +42,7 @@ export default function AICustomDatePicker() {
         <DatePicker
           selected={formData.date}
           onChange={handleDateChange}
-          dateFormat="yyyy-MM-dd"
+          dateFormat="dd/MM/yyyy"
           placeholderText="Select a date"
           className="input input-bordered"
         />

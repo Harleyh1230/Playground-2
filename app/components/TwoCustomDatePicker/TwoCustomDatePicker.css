@@ -1,4 +1,4 @@
-/* datepicker.css */
+/* This ccs is only for the datepicker npm package and it's still using tailwind css */
 @import 'react-datepicker/dist/react-datepicker.css';
 
 .react-datepicker__input-container input {
