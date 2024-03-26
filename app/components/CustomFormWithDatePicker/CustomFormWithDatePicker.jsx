@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './TwoCustomDatePicker.css'; 
+import './CustomFormWithDatePicker.css'; 
 
-export default function AICustomDatePicker() {
+export default function CustomFormWithDatePicker() {
   const today = new Date(); // Get today's date
   const [formData, setFormData] = useState({
     date: today,
