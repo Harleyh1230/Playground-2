@@ -8,7 +8,7 @@ export default function Home() {
       <CustomDatePicker /> 
       </section>
       <section className="mb-8 border border-green-500 py-8 rounded-lg">
-        <h1 className="text-2xl font-bold flex justify-center">Custom Form With DatePicker</h1>
+        <h1 className="text-2xl font-bold flex justify-center">Custom Form With DatePicker Components</h1>
         <CustomFormWithDatePicker/>
       </section>
     </main>
